@@ -10,7 +10,7 @@
   </head>
   <body> 
     <div class="wrapper">
-      <div class="banner__wrap">
+      <div class="banner__cover">
         <div class="header"> 
           <div class="container header__container"> <span class="header__logo">Funiro.</span>
             <nav class="header__nav"> 
@@ -29,9 +29,18 @@
             </div>
           </div>
         </div>
+        <section class="banner_wrapper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper"> 
+              <div class="swiper-slide"> <img src="../images/slide1" alt="Sofa"></div>
+              <div class="swiper-slide"><img src="../images/slide2" alt="Bed"></div>
+              <div class="swiper-slide"><img src="../images/slide3" alt="Sofa"></div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-    <script>new Swiper('')</script>
+    <script>new Swiper('.swiper-container')</script>
   </body>
 </html>
