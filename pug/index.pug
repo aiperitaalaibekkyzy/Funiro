@@ -7,10 +7,13 @@ html(lang="en")
     title Funiro
     link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
     link(rel="stylesheet", href="css/style.css")
+    script(src="") 
   body 
     .wrapper
-      .banner__wrap
+      .banner__cover
         include _includes/_header
+        include _includes/_banner
+      include _includes/_features
 
     script(src="./node_modules/swiper/swiper-bundle.min.js")
-    script new Swiper('')
+    script(src="./js/scripts.js") 
