@@ -1,0 +1,134 @@
+.products
+  width: 100%
+  max-height: 1084px
+
+.products__title
+  text-align: center
+  font-size: 40px
+  font-weight: 700
+  color: $color_second
+
+.products__container
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: repeat(2, 1fr)
+  grid-gap: 16px
+  height: 1000px
+
+.product-card__wrap
+  position: relative
+  max-width: 285px
+  max-height: 446px
+  perspective: 1000px
+  &:hover 
+    .card-front
+      transform: rotateY(180deg)
+    .card-back
+      transform: rotateY(360deg)
+
+.product-card__sale
+  position: absolute
+  width: 48px
+  height: 48px
+  border-radius: 50px
+  @extend %justify-center
+  right: 24px
+  top: 24px
+
+.sale-red
+  background:  #E97171
+.sale-green
+  background:  #2EC1AC
+
+.sale-text
+  text-align: center
+  font-weight: 500
+  color: #ffffff
+
+.card-front, .card-back
+  position: absolute
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  transition: 1s
+  backface-visibility: hidden
+
+.card-front__img
+  width: 100%
+
+
+.card-front__img-desc 
+  background: #F4F5F7
+  box-sizing: border-box
+  margin-top: -4px
+  padding: 16px 31px 30px 16px
+
+.img-desc__title
+  font-size: 24px
+  font-weight: 600
+  color: $color_second
+  margin: 0px auto 4px auto
+  
+.img-desc__subtitle
+  font-size: 16px
+  font-weight: 500
+  color: $font_color
+  margin: 4px auto 
+
+.img-desc__price-wrap
+  @extend %justify-space-between
+
+.img-desc__new-price
+  font-size: 20px
+  font-weight: 600
+  color: $color_second
+  margin: 4px 8px auto 0px
+
+.img-desc__old-price
+  font-family: 'Gilroy-Light'
+  font-size: 16px
+  font-weight: 300 !important
+  color: $light_grey
+  text-decoration: line-through
+  margin: 4px auto
+  line-height: 24px
+
+.card-back
+  background: #3A3A3A
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  transform: rotateY(180deg)
+  opacity: 0.72
+
+.card-back__desc 
+  margin: auto
+
+.card-back__desc-btn
+  padding: 12px 58px
+  background: #ffffff
+  color: $color_basic
+  font-weight: 600
+
+.card-back__actions
+  color: #ffffff
+  margin: 32px auto
+  font-size: 20px
+  text-align: center
+
+.share 
+  margin: auto 48px auto 8px
+.like
+  margin: auto auto auto 8px
+
+.products__btn-wrap
+  text-align: center
+.products__btn
+  text-decoration: none
+  padding: 12px 82px
+  border: 1px solid $color_basic
+  color: $color_basic
+  text-align: center
