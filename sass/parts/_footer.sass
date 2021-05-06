@@ -1,0 +1,63 @@
+.footer
+  max-height: rem(336px)
+  width: 100%
+.footer-container
+  display: flex
+  align-items: start
+  justify-content: space-evenly
+  margin: auto
+  padding-top: 49px
+
+.footer-hr
+  background: #D8D8D8
+  border: 0.1px solid #D8D8D8
+
+.footer-list__cover
+  &:first-child
+    max-width: rem(280px)
+  & ul
+    list-style: none
+.footer-info__address-cover, .footer-info__tel-cover
+  display: flex
+  align-items: center
+.icon-location, .icon-phone 
+  margin-right: 8px
+.li-title
+  font-size: 24px
+  font-weight: 700
+  color: #000000
+  margin-bottom: 8px
+
+.info-item
+  font-size: 16px
+  font-weight: 300
+  color: $paraph_color
+  line-height: 24px
+  margin-top: 10px
+  margin-bottom: 10px
+
+.footer__item, .footer-item__link
+  font-size: 16px
+  font-weight: 500
+  color: $paraph_color
+  margin-top: 15px
+  margin-bottom: 15px
+
+.footer-update__cover
+  @extend %justify-center
+
+.footer-update__input
+  padding: 12px
+  background: #F4F5F7
+  border: none
+  font-family: 'Gilroy-Regular'
+
+.update-icon__cover
+  height: 40px
+  width: 40px
+  background: $color_basic
+  margin-left: 4px
+  @extend %justify-center
+.icon-telegram
+  font-size: 23px
+  
