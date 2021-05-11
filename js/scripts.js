@@ -1,4 +1,16 @@
-new Swiper('.swiper-container', {
+// Look for .hamburger
+var hamburger = document.querySelector(".hamburger");
+var nav = document.querySelector(".header-burger-menu__nav");
+// On click
+hamburger.addEventListener("click", function() {
+  // Toggle class "is-active"
+  hamburger.classList.toggle("is-active");
+  nav.classList.toggle("active");
+  // Do something else, like open/close menu
+});
+
+
+new Swiper('.banner-swiper-container', {
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -8,16 +20,26 @@ new Swiper('.swiper-container', {
   autoplay: {
     delay: 2000,
   },
+  breakpoints: {
+    1146: {
+      slidesPerView: 1
+    }
+  }
 });
 
 new Swiper('.inspiration-swiper-container'), {
-  // loop: true,
+  loop: true,
   slidesPerView: 2.1,
-  spaceBetween: 24,
+  spaceBetween: 25,
+  centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
     clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   autoplay: {
     delay: 2000,
@@ -26,9 +48,10 @@ new Swiper('.inspiration-swiper-container'), {
 
 new Swiper('.tips-swiper-container'), {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 2.5,
   spaceBetween :20,
   loopedSlides: 3,
+  centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -39,6 +62,6 @@ new Swiper('.tips-swiper-container'), {
   },
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev', 
+    prevEl: '.swiper-button-prev',
   }
 }
