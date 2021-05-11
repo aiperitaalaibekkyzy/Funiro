@@ -15,24 +15,28 @@
         <div class="header"> 
           <div class="container header__container"> <span class="header__logo">Funiro.</span>
             <nav class="header__nav"> 
-              <div class="nav-link__wrap"><a class="nav__link" href="#">Products <i class="icon-down chervon-down"></i></a></div>
-              <div class="nav-link__wrap">   <a class="nav__link" href="#">Rooms <i class="icon-down chervon-down"></i></a></div>
-              <div class="nav-link__wrap"><a class="nav__link" href="#">Inspirations</a></div>
+              <div class="nav-link__wrap"><a class="nav__link" href="#products">Products <i class="icon-down chervon-down"></i></a></div>
+              <div class="nav-link__wrap">   <a class="nav__link" href="#rooms">Rooms <i class="icon-down chervon-down"></i></a></div>
+              <div class="nav-link__wrap"><a class="nav__link" href="#inspiration">Inspirations</a></div>
             </nav>
             <div class="header__form"> 
               <button class="button__search"><i class="icon-search"> </i></button>
-              <input class="search__input" type="text" placeholder="Search for minimalist chair">
+              <input class="search__input" type="search" placeholder="Search for ...">
             </div>
             <div class="header__actions"> 
               <button class="fav__btn"><i class="icon-heart"> </i></button>
               <button class="cart__btn"> <i class="icon-cart"></i></button>
               <div class="user__wrap"><img class="user" src="./images/user.png" alt="User photo"></div>
             </div>
+            <button class="hamburger hamburger--emphatic" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
           </div>
         </div>
-        <section class="banner_wrapper">
+        <div class="header-burger-menu"> 
+          <nav class="header-burger-menu__nav"><a class="burger-nav__link" href="#">My Account</a><a class="burger-nav__link" href="#products">Products</a><a class="burger-nav__link" href="#rooms">Rooms </a><a class="burger-nav__link" href="#inspiration">Inspirations</a><a class="burger-nav__link" href="#banner">Home</a></nav>
+        </div>
+        <section class="banner_wrapper" id="banner">
           <div class="container">
-            <div class="swiper-container">
+            <div class="swiper-container banner-swiper-container">
               <div class="swiper-pagination"></div>
               <div class="swiper-wrapper"> 
                 <div class="swiper-slide"> 
@@ -157,10 +161,10 @@
           </div>
         </div>
       </section>
-      <section class="products"> 
+      <section class="products" id="products">
         <h4 class="products__title">Our Products</h4>
         <div class="container products__container">
-          <div class="product-card__wrap">
+          <div class="product-card__wrap item1">
             <div class="card-front">
               <div class="product-card__sale sale-red"><span class="sale-text">-30%</span></div><img class="card-front__img" src="./images/whiteTable.png" alt="White Table">
               <div class="card-front__img-desc"> 
@@ -177,7 +181,7 @@
               </div>
             </div>
           </div>
-          <div class="product-card__wrap">
+          <div class="product-card__wrap item2">
             <div class="card-front">
               <div class="product-card__sale sale-red"><span class="sale-text">-50%</span></div><img class="card-front__img" src="./images/whiteChair.png" alt="White Chair">
               <div class="card-front__img-desc"> 
@@ -194,7 +198,7 @@
               </div>
             </div>
           </div>
-          <div class="product-card__wrap">
+          <div class="product-card__wrap item3">
             <div class="card-front">
               <div class="product-card__sale sale-red"><span class="sale-text">-50%</span></div><img class="card-front__img" src="./images/greySofa.png" alt="Grey Sofa">
               <div class="card-front__img-desc"> 
@@ -211,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div class="product-card__wrap">
+          <div class="product-card__wrap item4">
             <div class="card-front">
               <div class="product-card__sale sale-green"><span class="sale-text">New</span></div><img class="card-front__img" src="./images/fan.png" alt="Fan">
               <div class="card-front__img-desc"> 
@@ -228,7 +232,7 @@
               </div>
             </div>
           </div>
-          <div class="product-card__wrap">
+          <div class="product-card__wrap item5">
             <div class="card-front"><img class="card-front__img" src="./images/lamp.png" alt="Lamp">
               <div class="card-front__img-desc"> 
                 <h5 class="img-desc__title">Grifo</h5>
@@ -244,7 +248,7 @@
               </div>
             </div>
           </div>
-          <div class="product-card__wrap">
+          <div class="product-card__wrap item6">
             <div class="card-front">
               <div class="product-card__sale sale-green"><span class="sale-text">New</span></div><img class="card-front__img" src="./images/mug.png" alt="Mug">
               <div class="card-front__img-desc"> 
@@ -261,7 +265,7 @@
               </div>
             </div>
           </div>
-          <div class="product-card__wrap">
+          <div class="product-card__wrap item7">
             <div class="card-front">
               <div class="product-card__sale sale-red"><span class="sale-text">-50%</span></div><img class="card-front__img" src="./images/pinkBed.png" alt="Pink Bed">
               <div class="card-front__img-desc"> 
@@ -278,7 +282,7 @@
               </div>
             </div>
           </div>
-          <div class="product-card__wrap">
+          <div class="product-card__wrap item8">
             <div class="card-front">
               <div class="product-card__sale sale-green"><span class="sale-text">New</span></div><img class="card-front__img" src="./images/whiteFlowers.png" alt="White Flowers">
               <div class="card-front__img-desc"> 
@@ -295,17 +299,17 @@
               </div>
             </div>
           </div>
-          <div class="products__btn-wrap"><a class="products__btn" href="#">Show More</a></div>
+          <div class="products__btn-wrap item9"><a class="products__btn" href="#">Show More</a></div>
         </div>
       </section>
-      <section class="inspirations">
+      <section class="inspirations" id="rooms">
         <div class="container inspirations-container"> 
           <div class="inspiration-desc__cover"> 
             <h3 class="inspiration-desc__title">50+ Beautiful rooms inspiration</h3>
             <p class="inspiration-desc__text">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p><a class="inspiration-desc__btn" href="#">Explore more</a>
           </div>
           <div class="inspiration-slider"> 
-            <div class="inspiration-swiper-container">
+            <div class="swiper-container inspiration-swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide inspiration-slide">
                   <div class="insp-slide__img-cover"><img class="insp-slide__img" src="./images/pictures.png" alt="Pictures on Wall">
@@ -316,18 +320,39 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="insp-slide__img-cover"><img class="insp-slide__img" src="./images/lightKitchen.png" alt="Light Kitchen"></div>
+                  <div class="insp-slide__img-cover"><img class="insp-slide__img" src="./images/lightKitchen.png" alt="Light Kitchen">
+                    <div class="insp-slide__img-desc"> 
+                      <p class="insp-slide__img-text">02 — Kitchen</p>
+                      <h4 class="insp-slide__img-title">Inner Peace</h4>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="insp-slide__img-cover"><img class="insp-slide__img" src="./images/comode.png" alt="Comode"></div>
+                  <div class="insp-slide__img-cover"><img class="insp-slide__img" src="./images/comode.png" alt="Comode">
+                    <div class="insp-slide__img-desc"> 
+                      <p class="insp-slide__img-text">03 — Living Room</p>
+                      <h4 class="insp-slide__img-title">Inner Peace</h4>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="insp-slide__img-cover"><img class="insp-slide__img" src="./images/balconyPlants.png" alt="Balcony Plants"></div>
+                  <div class="insp-slide__img-cover"><img class="insp-slide__img" src="./images/balconyPlants.png" alt="Balcony Plants">
+                    <div class="insp-slide__img-desc"> 
+                      <p class="insp-slide__img-text">04 — Living Room</p>
+                      <h4 class="insp-slide__img-title">Inner Peace</h4>
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="insp-slide__img-cover"><img class="insp-slide__img" src="./images/softKitchen.png" alt="Soft Kitchen"></div>
+                  <div class="insp-slide__img-cover"><img class="insp-slide__img" src="./images/softKitchen.png" alt="Soft Kitchen">
+                    <div class="insp-slide__img-desc"> 
+                      <p class="insp-slide__img-text">5 — Kitchen</p>
+                      <h4 class="insp-slide__img-title">Inner Peace</h4>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="swiper-button-next btn-cirlce"></div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -336,9 +361,9 @@
       <section class="tips">
         <div class="container tips-container"> 
           <h3 class="tips-container__title">Tips & Tricks</h3>
-          <div class="tips-swiper-container">
+          <div class="swiper-container tips-swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide tips-slide">
+              <div class="swiper-slide tips-slide" max-with="391px">
                 <div class="tips-card__wrap"> <img class="tips-card__img" src="./images/family.png" alt="Family">
                   <div class="tips-card-img__desc"> 
                     <h4 class="card-img__title">How to create a living room to love</h4>
@@ -346,7 +371,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide tips-slide">
+              <div class="swiper-slide tips-slide" max-with="391px">
                 <div class="tips-card__wrap"> <img class="tips-card__img" src="./images/WorkPlace.png" alt="Work Place">
                   <div class="tips-card-img__desc"> 
                     <h4 class="card-img__title">Solution for clean look working space</h4>
@@ -354,7 +379,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide tips-slide">
+              <div class="swiper-slide tips-slide" max-with="391px">
                 <div class="tips-card__wrap"> <img class="tips-card__img" src="./images/Kitchen.png" alt="Kitchen">
                   <div class="tips-card-img__desc"> 
                     <h4 class="card-img__title">Make your cooking activity more fun with good setup</h4>
@@ -362,7 +387,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide tips-slide">
+              <div class="swiper-slide tips-slide" max-with="391px">
                 <div class="tips-card__wrap"> <img class="tips-card__img" src="./images/Kitchen.png" alt="Kitchen">
                   <div class="tips-card-img__desc"> 
                     <h4 class="card-img__title">Make your cooking activity more fun with good setup</h4>
@@ -372,12 +397,12 @@
               </div>
             </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev btn-cirlce"></div>
+            <div class="swiper-button-next btn-cirlce"></div>
           </div>
         </div>
       </section>
-      <section class="furnitures"> 
+      <section class="furnitures" id="inspiration">
         <div class="container furnitures-container">
           <p class="furnitures-subtitle">Share your setup with</p>
           <h4 class="furnitures-title">#FuniroFurniture</h4>
