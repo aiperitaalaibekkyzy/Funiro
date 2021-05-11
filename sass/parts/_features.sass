@@ -4,8 +4,11 @@
 .features-container
   display: grid
   grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-gap: 5px 10px
+  margin: auto
 .feature__cover
-  @extend %justify-center
+  display: flex
+  align-items: center
 .icon-trophy, .icon-guarantee, .icon-shipping, .icon-customer-support
   font-size: 40px
   font-weight: normal
@@ -22,3 +25,19 @@
   font-weight: 500
   color: $font_color
   margin-top: 0
+
+@media screen and (max-width: 1146px)
+  .features-container
+    max-width: rem(600px)
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr 
+    margin: auto
+    align-items: center
+
+@media screen and (max-width: 760px)
+  .features-container
+    max-width: rem(280px)
+    grid-template-columns: 1fr 
+    grid-template-rows: 1fr 1fr 1fr 1fr
+    margin: auto
+    align-items: center
